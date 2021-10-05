@@ -171,6 +171,21 @@ main {
   border-left: 4px solid var(--primary);
   font-size: 4vw;
   line-height: 1.1;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.page-section > h3 {
+  flex: 0 0 20%;
+  text-align: right;
+  padding-right: 15px;
+  border-right: 4px solid var(--primary);
+  padding-left: 15px;
+  border-left: 4px solid var(--primary);
+  font-size: 4vw;
+  line-height: 1.1;
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 
 .page-section > div {
@@ -273,8 +288,6 @@ main {
 .horiseon-marketing {
   background-image: url("https://khn.org/wp-content/uploads/sites/2/2020/04/teens-home_1350.jpg");
 }
-
-/* end portfolio project images */
 
 @media screen and (max-width: 980px) {
   header {
