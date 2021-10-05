@@ -4,9 +4,9 @@
 
 /* brand color palette */
 :root {
-  --primary: rgba(68, 88, 119, 1);
-  --secondary: rgba(146, 204, 206, 1);
-  --tertiary: rgba(49, 52, 61, 1);
+  --primary: rgb(82, 36, 104);
+  --secondary: rgb(39, 109, 6);
+  --tertiary: rgb(179, 178, 178);
   --dark: rgba(28, 29, 33, 1);
   --light: rgba(238, 238, 247, 1);
 }
@@ -20,14 +20,46 @@ body {
   line-height: 1.5;
 }
 
-h1,
+h1,{
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  color: var(--lightest-slate);
+  font-family: var(--font-mono);
+  counter-reset: item 0;
+  z-index: 12;
+  box-sizing: var(--light);
+}
 h2,
 h3,
 h4,
 h5,
-h6 {
-  margin: 0;
-}
+h6 
+/*
+
+ margin: 90%;
+font-family: 'Courier New', Courier, monospace;
+display: flex;
+flex-wrap: inherit;
+align-items: center;
+
+display: flex;
+-webkit-box-pack: justify;
+justify-content: space-between;
+-webkit-box-align: center;
+align-items: center;
+position: relative;
+width: 100%;
+color: var(--lightest-slate);
+font-family: var(--font-mono);
+counter-reset: item 0;
+z-index: 12;
+*/
+
 
 p {
   margin: 0;
@@ -123,11 +155,12 @@ main {
 
 .page-section {
   margin: 25px 0;
-  padding: 10px 0;
+  border: 25px 0;
+  padding: 25px 0;
   display: flex;
-  flex-direction: row;
+  flex-direction: column
   flex-wrap: wrap;
-  align-items: stretch;
+  align-items: stretch
   justify-content: space-between;
 }
 
@@ -174,7 +207,7 @@ main {
 
 /* feature first portfolio item */
 .flex-item:first-child {
-    min-height: 400px;
+    min-height: 300px;
     flex-basis: 100%;
 }
 
@@ -220,9 +253,9 @@ main {
 }
 
 /* portfolio project images */
-.run-buddy {
+ .run-buddy {
   background-image: url("../images/02-run-buddy.jpg");
-}
+} 
 
 .led-wall {
   background-image: url("../images/02-portfolio-1.jpg");
@@ -232,9 +265,9 @@ main {
   background-image: url("../images/02-portfolio-2.jpg");
 }
 
-.pastel-puzzles {
+ .pastel-puzzles {
   background-image: url("../images/02-portfolio-3.jpg");
-}
+} 
 
 .surf-report {
   background-image: url("../images/02-portfolio-4.jpg");
