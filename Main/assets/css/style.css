@@ -2,7 +2,6 @@
   box-sizing: border-box;
 }
 
-/* brand color palette */
 :root {
   --primary: rgb(55, 54, 56);
   --secondary: rgb(41, 30, 192);
@@ -20,8 +19,8 @@ body {
   line-height: 1.5;
 }
 
-h1,{
-  display: flex;
+h1, {
+  display: .flex-container
   justify-content: space-between;
   align-items: center;
   position: relative;
@@ -37,6 +36,7 @@ h4,
 h5,
 h6 
 /*
+Taken from another person's portfolio website, not sure if I want to use any of this
 
  margin: 90%;
 font-family: 'Courier New', Courier, monospace;
@@ -220,7 +220,6 @@ main {
   font-size: 0.9rem;
 }
 
-/* feature first portfolio item */
 .flex-item:first-child {
     min-height: 300px;
     flex-basis: 100%;
@@ -268,7 +267,6 @@ main {
   color: var(--secondary);
 }
 
-/* portfolio project images */
  .run-buddy {
   background-image: url("../images/02-run-buddy.jpg");
 } 
